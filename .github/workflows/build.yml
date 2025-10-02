@@ -14,5 +14,11 @@ jobs:
       - name: Upload document
         uses: actions/upload-artifact@v4
         with:
-          name: main-document
+          name: My-Resume
           path: out/Resume.pdf
+
+      - name: Github Release
+        uses: elgohr/Github-Release-Action@v5
+        with:
+          title: ${{ github.event.repository.name }}-build-${{ github.sha }}
+          workdir: out/Resume.pdf
