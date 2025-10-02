@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake
+% % License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Joseph Bolduc} \\ \vspace{1pt}
+    \small 832-840-0604 $|$ \href{mailto:jbolduc.pro@gmail.com}{\underline{jbolduc.pro@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/joseph-bolduc}{\underline{linkedin.com/in/joseph-bolduc}} $|$
+    \href{https://github.com/89ji}{\underline{github.com/89ji}}
+\end{center}
+
+%-----------SUMMARY------------
+\section{Summary}
+		
+Inquisitive computer science graduate with a diverse set of skills seeking to develop cybersecurity and software engineering skills. Proficient in a variety of languages and libraries. Looking for an internship/full time position.
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at Dallas}{Richardson, TX}
+      {Bachelor of Science in Computer Science, GPA: 3.85}{Aug. 2022 -- May 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Programming Instructor}{July 2021 -- July 2023}
+      {Code Ninjas}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{Oversaw lessons for middle school students in game development in C\# (Unity), Lua (Roblox), Javascript, and Scratch environments}
+        \resumeItem{Ran summer camps and created custom lesson plans for the day for 20+ students at a time}
+        \resumeItem{Resolved conflicts between students and fostered a welcoming, learning environment}
+        \resumeItem{Provided tours and sample lessons for prospective students and their parents}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Self-hosted Homelab} $|$ \emph{Docker, Linux, Nginx, Cloudflare, Authentic (SSO)}}{March 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Used a Raspberry Pi 4 and a spare desktop PC running Ubuntu server to host various services via Docker for my family (Immich, PiHole, Jellyfin, etc...)}
+            \resumeItem{Secured the Docker containers using Nginx as reverse proxy and Cloudflare DNS proxying}
+            \resumeItem{Implemented single sign-on for secure one-click user authentication via a self-hosted Authentik instance}
+            \resumeItem{Combined multiple smaller solid state drives into a single large logical volume using RAID and LVM}
+          \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Cyber Attack and Defense CTFs (UT Dallas)} $|$ \emph{Linux, Pwntools, GDB}}{January 2025 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Used pwntools to setup a return-to-libc attack to circumvent nonexecutable memory protections}
+            \resumeItem{Exploited printf format string vulnerabilities to leak memory and execute x86 32/64 shellcode}
+            \resumeItem{Won first place in a speed bounty for executing a side-channel attack to leak protected data}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\textbf{Medical Record Information Remover (UT Dallas)} $|$ \emph{Python, Spacy, Bottle}}{February 2025 -- April 2025}
+          \resumeItemListStart
+            \resumeItem{Led team to build a tool that removes information from medical records in Python}
+            \resumeItem{Explored machine learning methods for identifying and removing PII}
+            \resumeItem{Constructed a database utilizing MySQL that allows de-identified information to be looked up and reconstructed}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Quake Based Map Editor} $|$ \emph{OpenGL, C\#, Godot}}{October 2024 -- December 2024}
+          \resumeItemListStart
+            \resumeItem{Used the Godot engine to build a map editor allowing for basic geometry editing, texture application, and rendering to a file}
+            \resumeItem{Built a basic game in OpenGL/OpenTK that renders the map files as a playable in-game level}
+          \resumeItemListEnd          
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, Java, C/C++, Python, x86 Assembly, HTML/CSS, Javascript, SQL, Regex, Lisp} \\
+     \textbf{Frameworks and Tools}{: dotNet, Docker, Git, Linux, Nginx, Authentik} \\
+     \textbf{Libraries}{: PyTorch, NumPy, Matplotlib, Bottle, OpenCV, Pwntools, OpenGL} \\
+     \textbf{Platforms}{: Linux (Ubuntu, Fedora), Cloudflare, Windows}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
