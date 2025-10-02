@@ -25,7 +25,7 @@ jobs:
           body: |
             Automated build from commit ${{ github.sha }}
           draft: false
-          prerelease: true
+          prerelease: false
           files: out/Resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
