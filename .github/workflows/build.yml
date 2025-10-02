@@ -20,6 +20,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: release
           name: ${{ github.event.repository.name }}-build-${{ github.sha }}
           body: |
             Automated build from commit ${{ github.sha }}
